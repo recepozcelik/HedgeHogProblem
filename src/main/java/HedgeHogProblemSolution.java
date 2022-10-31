@@ -71,6 +71,6 @@ public class HedgeHogProblemSolution {
         //find max with previous up point
         int totalUpValue = apples[i][j] + maxAmountOfApples(apples, i, j - 1);
 
-        return (totalLeftValue >= totalUpValue ? totalLeftValue : totalUpValue);
+        return Math.max(totalLeftValue, totalUpValue);
     }
 }
